@@ -288,7 +288,6 @@ form {
   font-size: 13px;
   font-weight: 400;
   line-height: 15px;
-  text-transform: uppercase;
 
   @media (max-width: 680px) {
     font-size: 8px;
@@ -338,6 +337,7 @@ h1.color {
   color: white;
   font-size: 14px;
   border-radius: 50%;
+  z-index: 9;
 }
 .labels {
   margin-top: 5px;
@@ -503,21 +503,11 @@ h1.color {
   @media (max-width: 1199px) {
     font-size: 23px;
   }
-
-  &:after {
-    content: '';
-    display: block;
-    height: 6px;
-    margin-top: 17px;
-    width: 100%;
-    height: 1px;
-    background: $cor01;
-  }
 }
 
 
 .banners-extra__subtitle {
-  color: #787878;
+  color: $cor02;
   font-size: 13px;
   font-weight: 400;
   letter-spacing: -.1px;
@@ -626,6 +616,11 @@ button {
   font-size: 13px;
   font-weight: 400;
   letter-spacing: .1px;
+  li{
+    a{
+      display: block !important;
+    }
+  }
 }
 
 .board_htm.description p {
@@ -654,7 +649,7 @@ button {
     img {
       position: relative;
       left: 50%;
-      max-width: 140%;
+      max-width: 100%;
       transform: translateX(-50%);
       width: auto;
     }
